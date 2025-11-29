@@ -22,21 +22,21 @@
 - npm หรือ yarn
 
 ### Backend
-\\`\\`\\`bash
+```bash
 cd backend
 npm install
 npm start
-\\`\\`\\`
+```
 
 ### Frontend
-\\`\\`\\`bash
+```bash
 cd frontend
 npm install
 npm run dev
-\\`\\`\\`
+```
 
 ## 🏗️ โครงสร้างโปรเจ็ค
-\\`\\`\\`
+```
 viral-videos-tracker/
 ├── backend/           # Node.js API server
 │   ├── services/     # Scraping services
@@ -47,28 +47,28 @@ viral-videos-tracker/
 │   └── public/
 ├── README.md         # ไฟล์นี้
 └── .gitignore        # Git ignore rules
-\\`\\`\\`
+```
 
 ## 📡 API Endpoints
 
 ### Health Check
-\\`\\`\\`http
+```http
 GET /api/health
-\\`\\`\\`
+```
 
 ### ดึงวิดีโอทั้งหมด
-\\`\\`\\`http
+```http
 GET /api/videos?region=global&limit=10
-\\`\\`\\`
+```
 
 ### ดึงวิดีโอตามภูมิภาค
-\\`\\`\\`http
+```http
 GET /api/videos/:region?limit=10
-\\`\\`\\`
+```
 
 **Parameters:**
-- \\`region\\`: global, usa, china, thailand
-- \\`limit\\`: จำนวนวิดีโอ (default: 10)
+- `region`: global, usa, china, thailand
+- `limit`: จำนวนวิดีโอ (default: 10)
 
 ## 🎯 ภูมิภาคที่รองรับ
 - 🌍 **Global** - วิดีโอยอดนิยมระดับโลก
@@ -77,7 +77,7 @@ GET /api/videos/:region?limit=10
 - 🇹🇭 **Thailand** - วิดีโอยอดนิยมในไทย
 
 ## 🎨 ตัวอย่าง Response
-\\`\\`\\`json
+```json
 {
   "success": true,
   "count": 5,
@@ -96,37 +96,37 @@ GET /api/videos/:region?limit=10
     }
   ]
 }
-\\`\\`\\`
+```
 
 ## 🔧 Environment Variables
 
 ### Backend (.env)
-\\`\\`\\`env
+```env
 NODE_ENV=production
 PORT=3000
 LOG_LEVEL=info
-\\`\\`\\`
+```
 
 ### Frontend (.env)
-\\`\\`\\`env
+```env
 VITE_API_URL=http://localhost:3000
-\\`\\`\\`
+```
 
 ## 🚀 Deployment
 
 ### Frontend (Vercel)
-\\`\\`\\`bash
+```bash
 npm install -g vercel
 cd frontend
 vercel --prod
-\\`\\`\\`
+```
 
 ### Backend (Railway)
-\\`\\`\\`bash
+```bash
 npm install -g @railway/cli
 cd backend
 railway up
-\\`\\`\\`
+```
 
 ## ⚠️ ข้อควรระวัง
 - แอพนี้ใช้สำหรับการศึกษาเท่านั้น
@@ -136,9 +136,9 @@ railway up
 
 ## 🤝 การมีส่วนร่วม
 1. Fork the project
-2. Create your feature branch (\\`git checkout -b feature/AmazingFeature\\`)
-3. Commit your changes (\\`git commit -m 'Add some AmazingFeature'\\`)
-4. Push to the branch (\\`git push origin feature/AmazingFeature\\`)
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
 ## 📄 License
@@ -148,7 +148,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Your Name (@yourusername)
 
 ## 📞 Support
-หากมีคำถามหรือปัญหา สามารถเปิด issue ได้ที่ [GitHub Issues](https://github.com/yourusername/viral-videos-tracker/issues)
+หากมีคำถามหรือปัญหา สามารถเปิด issue ได้ที่ [GitHub Issues](https://github.com/tyleraz/viral-videos-tracker/issues)
 
 ---
 
